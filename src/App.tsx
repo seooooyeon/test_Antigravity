@@ -2,7 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import StudentLogin from './pages/StudentLogin';
-import TeacherEntry from './pages/TeacherEntry';
+import Entry from './pages/Entry';
 
 const App: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/student-login" element={<StudentLogin />} />
-        <Route path="/teacher-login" element={<TeacherEntry />} />
+        <Route path="/entry" element={<Entry />} />
       </Routes>
     </Router>
   );

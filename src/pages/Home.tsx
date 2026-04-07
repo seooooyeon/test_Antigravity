@@ -37,13 +37,13 @@ const Home: React.FC = () => {
               <span>학생 응시하기</span>
             </Link>
 
-            {/* Teacher Login Button */}
+            {/* Login/Signup Button */}
             <Link 
-              to="/teacher-login"
+              to="/entry"
               className="btn btn-outline btn-secondary h-full min-h-[320px] flex-col gap-5 text-4xl shadow-2xl transition-all hover:scale-[1.02] active:scale-95 group font-black rounded-3xl"
             >
               <LogIn className="w-20 h-20 group-hover:translate-x-3 transition-transform" />
-              <span>교사 로그인</span>
+              <span>로그인/회원가입</span>
             </Link>
           </div>
         </div>
