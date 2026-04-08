@@ -1,24 +1,11 @@
 import React from 'react';
-import { LogIn, GraduationCap, Home as HomeIcon } from 'lucide-react';
+import { LogIn, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50 font-sans" data-theme="corporate">
-      {/* Navigation Bar */}
-      <nav className="navbar bg-base-100 shadow-sm px-4 md:px-8">
-        <div className="flex-1">
-          <a className="flex items-center gap-2 cursor-pointer">
-            <img src="/logo.png" alt="로고" className="h-10 w-auto" />
-          </a>
-        </div>
-        <div className="flex-none">
-          <Link to="/" className="btn btn-ghost gap-3 text-slate-800 hover:bg-slate-100 text-xl font-bold transition-all">
-            <HomeIcon className="w-6 h-6 text-primary" />
-            메인페이지
-          </Link>
-        </div>
-      </nav>
+
 
       {/* Hero Section */}
       <main className="container mx-auto px-4 py-20 flex flex-col items-center justify-center text-center">

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Search, LogIn, Home as HomeIcon } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Search, LogIn } from 'lucide-react';
 
 const StudentLogin: React.FC = () => {
   return (
@@ -74,13 +73,6 @@ const StudentLogin: React.FC = () => {
 
 
 
-        {/* Back to main */}
-        <div className="mt-8 text-center">
-          <Link to="/" className="btn btn-ghost text-white/70 hover:text-white gap-2 text-lg">
-            <HomeIcon className="w-5 h-5" />
-            메인페이지로 돌아가기
-          </Link>
-        </div>
       </div>
     </div>
   );

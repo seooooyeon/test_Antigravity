@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, BookOpen, User, UserPlus, Home as HomeIcon } from 'lucide-react';
+import { GraduationCap, BookOpen, User, UserPlus } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Entry: React.FC = () => {
@@ -18,7 +18,7 @@ const Entry: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {/* Student Button */}
-          <button className="flex flex-col items-center justify-center gap-6 p-10 bg-blue-100 rounded-3xl shadow-xl shadow-blue-200/50 hover:scale-[1.03] active:scale-95 transition-all group border-none">
+          <Link to="/student-login" className="flex flex-col items-center justify-center gap-6 p-10 bg-blue-100 rounded-3xl shadow-xl shadow-blue-200/50 hover:scale-[1.03] active:scale-95 transition-all group border-none no-underline">
             <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-sm group-hover:-rotate-3 transition-transform">
               <GraduationCap size={40} className="text-blue-500" />
             </div>
@@ -26,10 +26,10 @@ const Entry: React.FC = () => {
               <span className="block text-3xl font-black text-slate-700">학생</span>
               <span className="block text-base text-slate-500 font-medium">학생 계정으로 접속</span>
             </div>
-          </button>
+          </Link>
 
           {/* Teacher Button */}
-          <button className="flex flex-col items-center justify-center gap-6 p-10 bg-indigo-100 rounded-3xl shadow-xl shadow-indigo-200/50 hover:scale-[1.03] active:scale-95 transition-all group border-none">
+          <Link to="/teacher-dashboard" className="flex flex-col items-center justify-center gap-6 p-10 bg-indigo-100 rounded-3xl shadow-xl shadow-indigo-200/50 hover:scale-[1.03] active:scale-95 transition-all group border-none no-underline">
             <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-sm group-hover:rotate-3 transition-transform">
               <BookOpen size={40} className="text-indigo-500" />
             </div>
@@ -37,7 +37,7 @@ const Entry: React.FC = () => {
               <span className="block text-3xl font-black text-slate-700">교사</span>
               <span className="block text-base text-slate-500 font-medium">교사 계정으로 접속</span>
             </div>
-          </button>
+          </Link>
 
           {/* General Member Button */}
           <button className="flex flex-col items-center justify-center gap-6 p-10 bg-sky-100 rounded-3xl shadow-xl shadow-sky-200/50 hover:scale-[1.03] active:scale-95 transition-all group border-none">
@@ -61,13 +61,6 @@ const Entry: React.FC = () => {
           </Link>
         </div>
 
-        {/* Home Button */}
-        <div className="mt-12 text-center">
-          <Link to="/" className="btn btn-ghost gap-3 text-slate-400 hover:text-slate-600 hover:bg-slate-200/50 rounded-2xl transition-all text-lg font-bold">
-            <HomeIcon size={24} />
-            메인페이지로 돌아가기
-          </Link>
-        </div>
       </main>
 
       {/* Footer */}
