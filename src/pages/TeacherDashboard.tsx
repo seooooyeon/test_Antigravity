@@ -4,6 +4,7 @@ import {
   ChevronRight, ChevronDown, CheckCircle2, ChevronRightCircle, Home
 } from 'lucide-react';
 import GradeClassManagement from '../components/GradeClassManagement';
+import TeacherManagement from '../components/TeacherManagement';
 
 type MenuState = {
   parent: string;
@@ -305,6 +306,8 @@ const TeacherDashboard: React.FC = () => {
             </div>
           ) : activeMenu.parent === '학교정보' && activeMenu.child === '학년반관리' ? (
             <GradeClassManagement />
+          ) : activeMenu.parent === '학교정보' && activeMenu.child === '교사' ? (
+            <TeacherManagement />
           ) : activeMenu.parent === '학교정보' && activeMenu.child === '학생관리' ? (
             /* 학생관리 특별 렌더링 */
             <div className="space-y-6 animate-in slide-in-from-bottom-4 duration-500">
